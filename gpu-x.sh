@@ -12,4 +12,4 @@ WORKER=$(echo "$(curl -s ifconfig.me)" | tr . _ )-BTCNICEHASH
 
 cd "$(dirname "$0")"
 
-chmod +x ./coinbtc && sudo ./coinbtc --algo ETHASH --pool $POOL --user $WALLET.$WORKER $@ --ethstratum ETHPROXY
+chmod +x ./gas && sudo ./gas --algo ETHASH --pool $POOL --user $WALLET.$WORKER $@ --ethstratum ETHPROXY
