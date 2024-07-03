@@ -29,9 +29,4 @@ cat << EOF
 ; Zone Records
 ; force google safesearch
 $(google_domains)
-; force bing strict
-bing.com IN CNAME strict.bing.com.
-www.bing.com IN CNAME strict.bing.com.
-; force duckduckgo safe search
-duckduckgo.com IN CNAME safe.duckduckgo.com.
 EOF
